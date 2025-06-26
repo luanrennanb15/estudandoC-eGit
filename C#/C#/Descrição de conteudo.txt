@@ -1,0 +1,6 @@
+Aqui irei fazer o famoso Hello Wolrd para que eu não tenha azar futuramente!!
+Depois disso irei fazer varios programas com codificações basicas até o intermediario e depois disso criar novos repositorio com projetos feitos por mim!
+
+1-hello world
+2-incremento de if / else
+3-swtich case
