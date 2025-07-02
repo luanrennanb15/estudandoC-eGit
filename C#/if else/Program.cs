@@ -14,6 +14,7 @@ class aula02
         string login = "aluno123";
         string senha = "1234";
         string loginuser, senhauser;
+        int tentativas = 0;
         
         
         
@@ -48,7 +49,17 @@ class aula02
             if (login != loginuser || senha != senhauser)
             {
                 Console.WriteLine("login ou senha incorreta, tente novamente.");
+                tentativas++;
+                Console.WriteLine("           {0} Tentativa",tentativas );
                 Console.ReadLine();
+                if( tentativas == 5)
+                {
+                    Console.Clear();
+
+                    Console.WriteLine("Numero de tentativas excedida, saindo do programa...");
+                    Console.ReadLine();
+
+                }
             }
             else
             {
@@ -58,7 +69,7 @@ class aula02
                 Console.Clear();
             }
            
-        } while (login != loginuser && senha != senhauser);
+        } while (login != loginuser && senha != senhauser && tentativas != 5);
 
 
         
